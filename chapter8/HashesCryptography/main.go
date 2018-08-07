@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"hash/crc32"
-	"io/ioutil"
+	"io"
+	"os"
 )
 
 func getHash(filename string) (uint32, error) {
