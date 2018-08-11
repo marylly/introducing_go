@@ -32,6 +32,8 @@ func main() {
 				fmt.Println(msg2)
 			case <- time.After(time.Second):
 				fmt.Println("timeout")
+			default:
+				fmt.Println("nothing ready")
 			}
 		}
 	}()
